@@ -16,7 +16,8 @@ router = APIRouter()
 def get_deudas(cuit: str):
     res = requests.get(
         f"https://api.bcra.gob.ar/centraldedeudores/v1.0/Deudas/{cuit}",
-        verify=False
+        verify=False,
+        timeout=30
     )
 
     if res.status_code != 200:
@@ -32,7 +33,8 @@ def get_deudas(cuit: str):
 def get_deudas_historica(cuit:str):
     res = requests.get(
         f"https://api.bcra.gob.ar/centraldedeudores/v1.0/Deudas/Historicas/{cuit}",
-        verify=False
+        verify=False,
+        timeout=30
     )
 
     if res.status_code != 200:
