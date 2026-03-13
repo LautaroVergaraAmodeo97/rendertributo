@@ -18,7 +18,7 @@ situacion_map = {
 }
 
 #CSV_PATH = "C:\\Users\\lauta\\OneDrive\\Desktop\\Tributo Simple\\datos_externos\\backend\\cuits.csv"
-CSV_PATH = "backend\cuits.csv"
+CSV_PATH = "cuits.csv"
 _cache = {"deudas_df": None}
 
 
